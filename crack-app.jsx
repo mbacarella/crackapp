@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, useCallback, useMemo } from "react";
+const { useState, useEffect, useRef, useCallback, useMemo } = React;
 
 // ========== WEB AUDIO SOUND ENGINE ==========
 let actx = null;
@@ -185,7 +185,7 @@ const FeedItem = ({ index }) => {
 };
 
 // ========== MAIN APP ==========
-export default function CrackApp() {
+function CrackApp() {
   const [started, setStarted] = useState(false);
   const [toasts, setToasts] = useState([]);
   const [gems, setGems] = useState(12847);
